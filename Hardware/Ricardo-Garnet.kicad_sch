@@ -3463,6 +3463,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -11090,11 +11197,11 @@
 		(uuid "4ee1088a-4c08-4097-b91c-c96a4cca0b16")
 	)
 	(no_connect
-		(at 134.62 104.14)
+		(at 133.35 104.14)
 		(uuid "70b0c19f-9421-423d-b484-83a24f27d317")
 	)
 	(no_connect
-		(at 134.62 101.6)
+		(at 133.35 101.6)
 		(uuid "8942d4d6-f9c9-42e8-aae6-753b0f9198be")
 	)
 	(no_connect
@@ -13092,16 +13199,6 @@
 			(type default)
 		)
 		(uuid "f15bf798-6df1-4843-8342-ccf7730f1314")
-	)
-	(wire
-		(pts
-			(xy 182.88 158.75) (xy 190.5 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f34d3818-71ed-4f21-8c6f-d4ac61e71668")
 	)
 	(wire
 		(pts
@@ -15609,6 +15706,16 @@
 		)
 		(uuid "0d65ce34-6ed9-41ed-a851-4c26b38ae671")
 	)
+	(label "RXD"
+		(at 45.72 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "102ede3d-48f7-4efd-9ea1-edd0de479110")
+	)
 	(label "CAN-"
 		(at 102.87 182.88 0)
 		(effects
@@ -16028,6 +16135,16 @@
 			(justify right bottom)
 		)
 		(uuid "a0d80494-b990-4291-8724-4b5341a63494")
+	)
+	(label "TXD"
+		(at 45.72 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a46775cf-a054-4414-ba6b-a04d126d4f40")
 	)
 	(label "AN_IN"
 		(at 238.76 21.59 0)
@@ -19183,6 +19300,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 45.72 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4ef10f3b-9c72-4396-8616-41610825434e")
+		(property "Reference" "TP9"
+			(at 40.9448 100.2284 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 40.9448 97.917 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 45.72 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 45.72 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "51bdfe5b-7a44-4805-b436-86e800b23285")
+		)
+		(instances
+			(project "Ricardo-Garnet"
+				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f"
+					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED_Small")
 		(at 25.4 38.1 0)
 		(unit 1)
@@ -19644,71 +19827,6 @@
 			(project "BLDC_4"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f"
 					(reference "C17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "+5V_9")
-		(lib_id "BLDC_4-rescue:+5V")
-		(at 190.5 158.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "75bd46cd-4b84-49e2-86b0-5f0dfc432110")
-		(property "Reference" "#PWR065"
-			(at 190.5 156.464 0)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 190.246 155.194 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 190.5 158.75 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 190.5 158.75 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 190.5 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a92d78d4-ef26-43fa-a12f-db0520fe1904")
-		)
-		(instances
-			(project "BLDC_4"
-				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f"
-					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -20244,6 +20362,72 @@
 			(project "BLDC_4"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f"
 					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 45.72 104.14 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a1f796cf-da3c-4ed6-8b82-d103777290a5")
+		(property "Reference" "TP10"
+			(at 40.9448 105.3084 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 40.9448 102.997 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 45.72 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 45.72 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c063127c-028e-4a18-a5e1-61e1885ca940")
+		)
+		(instances
+			(project "Ricardo-Garnet"
+				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f"
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -21964,7 +22148,7 @@
 			)
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f"
 					(page "6")
 				)
@@ -22156,7 +22340,7 @@
 			)
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f"
 					(page "7")
 				)
@@ -22238,7 +22422,7 @@
 			)
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f"
 					(page "2")
 				)
@@ -22380,7 +22564,7 @@
 			)
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f"
 					(page "5")
 				)
@@ -22422,7 +22606,7 @@
 			)
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f"
 					(page "3")
 				)
@@ -22473,18 +22657,8 @@
 				(justify right)
 			)
 		)
-		(pin "5V" output
-			(at 182.88 158.75 0)
-			(uuid "4522ad62-0fa3-4bb2-9658-2dfc6dc70c3c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f"
 					(page "4")
 				)
@@ -22546,7 +22720,7 @@
 			)
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f"
 					(page "8")
 				)
