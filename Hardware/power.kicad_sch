@@ -4134,7 +4134,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e553dc0-c0ec-45f7-ad87-8ecb647a8da4")
-		(property "Reference" "U4"
+		(property "Reference" "U7"
 			(at 149.86 69.9602 0)
 			(effects
 				(font
@@ -4258,7 +4258,7 @@
 		(instances
 			(project "BLDC_4"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/6f1e0e7e-af26-435a-9a05-4d550e4eb21c"
-					(reference "U4")
+					(reference "U7")
 					(unit 1)
 				)
 			)

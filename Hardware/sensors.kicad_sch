@@ -4578,7 +4578,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "iclr:TPS74901DRCR"
 			(at 74.93 41.91 0)
 			(effects
 				(font
@@ -6198,7 +6198,7 @@
 				)
 			)
 		)
-		(property "Footprint" "QFN40P300X300X80-21N-D"
+		(property "Footprint" "iclr:QFN40P300X300X80-21N-D"
 			(at 282.88 95.25 0)
 			(effects
 				(font
