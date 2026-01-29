@@ -2516,6 +2516,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 107.95) (xy 55.88 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05ba8f9d-fbc2-425e-a4e4-7a7f50270f37")
+	)
+	(wire
+		(pts
 			(xy 229.87 44.45) (xy 238.76 44.45)
 		)
 		(stroke
@@ -2786,6 +2796,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 165.1) (xy 53.34 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3401eed4-0b4a-4cf6-ba57-23921426bc72")
+	)
+	(wire
+		(pts
 			(xy 95.25 142.24) (xy 95.25 143.51)
 		)
 		(stroke
@@ -2843,6 +2863,16 @@
 			(type default)
 		)
 		(uuid "39d07473-b438-4532-b04c-98063d113b38")
+	)
+	(wire
+		(pts
+			(xy 44.45 160.02) (xy 44.45 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3aedc9cc-6d0b-4820-850d-0727eab5a8d5")
 	)
 	(wire
 		(pts
@@ -2926,7 +2956,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 113.03) (xy 53.34 113.03)
+			(xy 48.26 113.03) (xy 53.34 113.03)
 		)
 		(stroke
 			(width 0)
@@ -3176,6 +3206,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 105.41) (xy 45.72 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fee30ff-8b0b-4ce8-b0ec-558c9c7e84b4")
+	)
+	(wire
+		(pts
 			(xy 254 57.15) (xy 254 53.34)
 		)
 		(stroke
@@ -3183,16 +3223,6 @@
 			(type default)
 		)
 		(uuid "82c92c14-330f-4643-9d89-ce1b8eeecaa4")
-	)
-	(wire
-		(pts
-			(xy 55.88 107.95) (xy 50.8 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82dd2c54-1996-435c-b0d4-ebd15f47ac97")
 	)
 	(wire
 		(pts
@@ -3213,16 +3243,6 @@
 			(type default)
 		)
 		(uuid "84e94f71-3ee5-440c-8b03-8a7dce41ac8e")
-	)
-	(wire
-		(pts
-			(xy 50.8 111.76) (xy 50.8 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "86ec8c7a-2147-401e-a0ce-7f83ebeb37d6")
 	)
 	(wire
 		(pts
@@ -3303,16 +3323,6 @@
 			(type default)
 		)
 		(uuid "937b142e-da54-466b-b20a-b24a6b2f5482")
-	)
-	(wire
-		(pts
-			(xy 50.8 107.95) (xy 50.8 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "947e26db-44e9-43f8-a36b-246fba02d2af")
 	)
 	(wire
 		(pts
@@ -3433,16 +3443,6 @@
 			(type default)
 		)
 		(uuid "aacec6e1-e0e5-411f-ae7c-9f0f087a3d0f")
-	)
-	(wire
-		(pts
-			(xy 50.8 163.83) (xy 50.8 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab7d3776-3740-4e80-97fe-c32509746dee")
 	)
 	(wire
 		(pts
@@ -3666,16 +3666,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 160.02) (xy 50.8 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c871a840-fcdc-4d01-a024-81b9ed5ff60d")
-	)
-	(wire
-		(pts
 			(xy 168.91 44.45) (xy 168.91 45.72)
 		)
 		(stroke
@@ -3756,13 +3746,13 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 165.1) (xy 53.34 165.1)
+			(xy 46.99 165.1) (xy 46.99 157.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d0ca3996-2c2a-4225-bf79-55c9e044bd06")
+		(uuid "d0601550-d01c-43d3-9ef0-3a0cfe06bbd6")
 	)
 	(wire
 		(pts
@@ -3886,6 +3876,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 105.41) (xy 48.26 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e356e1a6-bff9-4912-831d-5c711314a646")
+	)
+	(wire
+		(pts
 			(xy 171.45 101.6) (xy 175.26 101.6)
 		)
 		(stroke
@@ -3893,6 +3893,16 @@
 			(type default)
 		)
 		(uuid "e52dddd2-3f7a-4756-8f97-e6b7d4e2342f")
+	)
+	(wire
+		(pts
+			(xy 55.88 160.02) (xy 44.45 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e669790f-89ac-4289-9c7a-076350c605ff")
 	)
 	(wire
 		(pts
@@ -3973,16 +3983,6 @@
 			(type default)
 		)
 		(uuid "ec27b6cd-b129-4366-a25e-42175e9acc92")
-	)
-	(wire
-		(pts
-			(xy 50.8 160.02) (xy 50.8 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee2d380f-aac0-4905-830d-e0e5aed751ab")
 	)
 	(wire
 		(pts
@@ -6712,7 +6712,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Male")
-		(at 45.72 111.76 0)
+		(at 45.72 100.33 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6721,7 +6721,7 @@
 		(dnp no)
 		(uuid "73b3e949-1364-4440-8ad9-ec13d71112b0")
 		(property "Reference" "J4"
-			(at 40.64 109.22 90)
+			(at 48.26 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6730,7 +6730,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Male"
-			(at 43.18 105.41 90)
+			(at 52.07 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6739,7 +6739,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx02_1x02_P2.50mm_Horizontal"
-			(at 45.72 111.76 0)
+			(at 45.72 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6748,7 +6748,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 45.72 111.76 0)
+			(at 45.72 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6757,7 +6757,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 45.72 111.76 0)
+			(at 45.72 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7312,7 +7312,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Male")
-		(at 45.72 163.83 0)
+		(at 44.45 152.4 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7321,7 +7321,7 @@
 		(dnp no)
 		(uuid "89cd4955-2ff7-4536-9007-362c33bcd96a")
 		(property "Reference" "J7"
-			(at 40.64 161.29 90)
+			(at 46.99 147.32 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7330,7 +7330,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Male"
-			(at 43.18 157.48 90)
+			(at 50.8 149.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7339,7 +7339,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx02_1x02_P2.50mm_Horizontal"
-			(at 45.72 163.83 0)
+			(at 44.45 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7348,7 +7348,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 45.72 163.83 0)
+			(at 44.45 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7357,7 +7357,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 45.72 163.83 0)
+			(at 44.45 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)

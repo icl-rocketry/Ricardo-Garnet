@@ -11113,6 +11113,12 @@
 		(uuid "99572fdf-2a22-4477-a0a3-934f0bd8685f")
 	)
 	(junction
+		(at 73.6308 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9f54d0eb-0060-4288-8e70-e60a861216ed")
+	)
+	(junction
 		(at 33.02 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11207,6 +11213,10 @@
 	(no_connect
 		(at 133.35 101.6)
 		(uuid "8942d4d6-f9c9-42e8-aae6-753b0f9198be")
+	)
+	(no_connect
+		(at 102.87 25.4)
+		(uuid "a3698455-5862-4163-b4e5-cf187a8603e1")
 	)
 	(no_connect
 		(at 133.35 109.22)
@@ -11324,7 +11334,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 26.67) (xy 71.12 26.67)
+			(xy 73.66 26.67) (xy 73.6308 26.67)
 		)
 		(stroke
 			(width 0)
@@ -12671,6 +12681,16 @@
 			(type default)
 		)
 		(uuid "b07dd113-3cd6-4421-be96-305ff5072015")
+	)
+	(wire
+		(pts
+			(xy 73.6308 26.67) (xy 71.12 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b324d7b2-d973-47ed-b092-2b95ad3327d0")
 	)
 	(wire
 		(pts
@@ -16481,50 +16501,6 @@
 		(uuid "2f5f7f66-04d0-4f1b-9968-56708171f73b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.3306 38.2471 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DEP"
-		(shape input)
-		(at 73.66 26.67 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "67c26d24-1162-4e8a-9b47-b8d470f8b952")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 73.66 20.65 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DEP"
-		(shape input)
-		(at 102.87 25.4 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "db876191-25dc-4ed9-9d0a-827f11a3d3e4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 102.87 31.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20933,6 +20909,71 @@
 			(project "BLDC_4"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "+5V_9")
+		(lib_id "BLDC_4-rescue:+5V")
+		(at 73.6308 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c9e63203-3307-48ef-bf1b-94c52ca232dc")
+		(property "Reference" "#PWR052"
+			(at 73.6308 24.384 0)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 73.3768 23.114 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.6308 26.67 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.6308 26.67 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 73.6308 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "973f24dd-5a7d-4204-8181-b51260dca298")
+		)
+		(instances
+			(project "Ricardo-Garnet"
+				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f"
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
