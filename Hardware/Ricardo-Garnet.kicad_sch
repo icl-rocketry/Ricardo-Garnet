@@ -10616,10 +10616,6 @@
 		(uuid "a3698455-5862-4163-b4e5-cf187a8603e1")
 	)
 	(no_connect
-		(at 133.35 109.22)
-		(uuid "a793facb-cbeb-42cb-8017-aa2c34b0ead9")
-	)
-	(no_connect
 		(at 133.35 86.36)
 		(uuid "bc38a15a-db7d-4d07-b193-18ecd34a9292")
 	)
@@ -11171,6 +11167,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 109.22) (xy 139.7 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34dd9df0-edd8-4a21-a695-3ce4b3034db7")
+	)
+	(wire
+		(pts
 			(xy 182.88 152.4) (xy 190.5 152.4)
 		)
 		(stroke
@@ -11578,6 +11584,16 @@
 			(type default)
 		)
 		(uuid "68a06ebe-a87a-414d-adc0-d59ed2520ebd")
+	)
+	(wire
+		(pts
+			(xy 207.01 129.54) (xy 208.28 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a3f5a35-04ce-46aa-96e1-0802f5e6a376")
 	)
 	(wire
 		(pts
@@ -15128,6 +15144,16 @@
 		)
 		(uuid "92e3e906-93b9-4691-acde-729e55724ed8")
 	)
+	(label "ENCODER_CS"
+		(at 207.01 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "939e7aa3-856b-4622-a7bf-be0cfdfa4ca0")
+	)
 	(label "RXD"
 		(at 62.23 106.68 180)
 		(effects
@@ -15137,6 +15163,16 @@
 			(justify right bottom)
 		)
 		(uuid "9da051d9-4787-4376-9ef4-f653baa88d5b")
+	)
+	(label "ENCODER_CS"
+		(at 139.7 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a0852c32-30bf-4951-ab23-ed284ce502a5")
 	)
 	(label "HSPI_SCLK"
 		(at 62.23 91.44 180)
@@ -21073,6 +21109,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "ENCODER_CS" input
+			(at 208.28 129.54 180)
+			(uuid "283de538-34ac-40f1-afbb-73d4346de055")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

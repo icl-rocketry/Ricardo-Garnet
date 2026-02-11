@@ -14292,6 +14292,12 @@
 		(uuid "48df6379-5221-4c9e-b05c-f44ab0b2fafc")
 	)
 	(junction
+		(at 177.8 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "51805ee9-a7ba-47d7-8782-96eb8dae5275")
+	)
+	(junction
 		(at 176.53 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -14302,6 +14308,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5f3e32ba-c0c2-4365-b2a3-f91073f67bcc")
+	)
+	(junction
+		(at 134.62 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62227777-f178-44ae-b58d-99364dcb57ac")
 	)
 	(junction
 		(at 264.16 25.4)
@@ -14332,6 +14344,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7badb060-5c8d-4797-8f4d-f74960131693")
+	)
+	(junction
+		(at 157.48 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f9af173-61a6-42f9-980b-111a9ce3e731")
 	)
 	(junction
 		(at 160.02 140.97)
@@ -14370,10 +14388,34 @@
 		(uuid "b7f4b49d-fb8b-42be-9e94-a3a4ffb23fe8")
 	)
 	(junction
+		(at 200.66 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3f8804d-5e70-48eb-bed9-28c8b90a1641")
+	)
+	(junction
 		(at 160.02 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c5bc36b8-0e2f-458b-bd64-10ef5874a273")
+	)
+	(junction
+		(at 157.48 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c655100c-da40-460e-ac92-a895b75fbf28")
+	)
+	(junction
+		(at 200.66 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce08236c-3a4a-4652-8b57-d0978a807da7")
+	)
+	(junction
+		(at 177.8 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf2d521d-74bb-47a5-a192-e1429cb23d54")
 	)
 	(junction
 		(at 99.06 120.65)
@@ -14392,6 +14434,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dfa4594d-144f-4655-a52d-7021eef395e7")
+	)
+	(junction
+		(at 134.62 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4e68ac2-6fdf-43e4-9a1a-973a042f2330")
 	)
 	(junction
 		(at 251.46 85.09)
@@ -14465,6 +14513,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 30.48) (xy 157.48 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05510d56-7ae3-4b3c-9f37-e6feebbad8a8")
+	)
+	(wire
+		(pts
 			(xy 160.02 165.1) (xy 154.94 165.1)
 		)
 		(stroke
@@ -14472,6 +14530,16 @@
 			(type default)
 		)
 		(uuid "0668ea6b-488e-451d-87a2-7dc411e8be43")
+	)
+	(wire
+		(pts
+			(xy 157.48 35.56) (xy 157.48 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0855f0dc-63bb-46e1-ac90-01ad7dc779d4")
 	)
 	(wire
 		(pts
@@ -14495,6 +14563,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 30.48) (xy 177.8 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a372bcc-c7ae-4172-8fb1-0000379963c3")
+	)
+	(wire
+		(pts
 			(xy 160.02 140.97) (xy 163.83 140.97)
 		)
 		(stroke
@@ -14502,6 +14580,26 @@
 			(type default)
 		)
 		(uuid "0e1a7cad-5bc4-4184-9cec-04fbf0d58191")
+	)
+	(wire
+		(pts
+			(xy 134.62 30.48) (xy 134.62 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e4f9a14-6388-4b35-9540-3f615358b818")
+	)
+	(wire
+		(pts
+			(xy 177.8 25.4) (xy 177.8 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "124409c0-48cb-45e6-91ca-487e2ea0bcd9")
 	)
 	(wire
 		(pts
@@ -14542,6 +14640,16 @@
 			(type default)
 		)
 		(uuid "22e308a4-3c46-4db5-842e-5414da15b5f2")
+	)
+	(wire
+		(pts
+			(xy 157.48 30.48) (xy 157.48 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29b50186-11f7-4164-b144-06d134e950c9")
 	)
 	(wire
 		(pts
@@ -14725,6 +14833,26 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 35.56) (xy 181.61 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "438d6f71-bacf-47ab-9cd2-951f5dc6fae4")
+	)
+	(wire
+		(pts
+			(xy 173.99 25.4) (xy 177.8 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "480aa533-8488-418f-8456-8f1417f265f8")
+	)
+	(wire
+		(pts
 			(xy 95.25 87.63) (xy 95.25 88.9)
 		)
 		(stroke
@@ -14765,6 +14893,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 25.4) (xy 134.62 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "536eb9ab-6c1a-48d2-8319-83175ff0c4ba")
+	)
+	(wire
+		(pts
 			(xy 101.6 100.33) (xy 101.6 97.79)
 		)
 		(stroke
@@ -14772,6 +14910,16 @@
 			(type default)
 		)
 		(uuid "540a286e-67ca-40a2-b4d0-9c4a6e838da7")
+	)
+	(wire
+		(pts
+			(xy 157.48 25.4) (xy 157.48 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55ebb2bc-0307-4971-b470-c47534923944")
 	)
 	(wire
 		(pts
@@ -14795,6 +14943,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 25.4) (xy 138.43 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a22e212-768d-4626-93ac-605a4581d516")
+	)
+	(wire
+		(pts
 			(xy 236.22 30.48) (xy 245.11 30.48)
 		)
 		(stroke
@@ -14812,6 +14970,16 @@
 			(type default)
 		)
 		(uuid "5c4675c3-0c90-4519-9ffd-f91f94b7dde0")
+	)
+	(wire
+		(pts
+			(xy 157.48 35.56) (xy 148.59 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60ceb0be-cd0e-4663-b11a-681021470c06")
 	)
 	(polyline
 		(pts
@@ -14875,6 +15043,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 35.56) (xy 191.77 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66303d44-deee-4322-8716-28c490bb330f")
+	)
+	(wire
+		(pts
 			(xy 251.46 97.79) (xy 251.46 100.33)
 		)
 		(stroke
@@ -14892,6 +15070,16 @@
 			(type default)
 		)
 		(uuid "673f3047-6e80-4903-9322-79d2ce674ed1")
+	)
+	(wire
+		(pts
+			(xy 200.66 35.56) (xy 200.66 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "674e9c60-767b-4957-a7f7-0d84c1f6e939")
 	)
 	(wire
 		(pts
@@ -15005,6 +15193,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 30.48) (xy 134.62 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78c900f0-aa8c-4a5a-a17e-bc4e5378b15a")
+	)
+	(wire
+		(pts
 			(xy 251.46 109.22) (xy 252.73 109.22)
 		)
 		(stroke
@@ -15025,6 +15223,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 35.56) (xy 138.43 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b9b4f33-6961-40d7-a7f6-07e2783a6f24")
+	)
+	(wire
+		(pts
 			(xy 252.73 111.76) (xy 251.46 111.76)
 		)
 		(stroke
@@ -15042,6 +15250,16 @@
 			(type default)
 		)
 		(uuid "7cf2b7bf-9b77-4390-98b1-82f2602845a3")
+	)
+	(wire
+		(pts
+			(xy 191.77 25.4) (xy 200.66 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80b247d3-fbcc-4b4b-b0ab-66e699e86c97")
 	)
 	(wire
 		(pts
@@ -15072,6 +15290,16 @@
 			(type default)
 		)
 		(uuid "89ca1c1f-d332-4587-b9e0-9596dd6367f6")
+	)
+	(wire
+		(pts
+			(xy 181.61 30.48) (xy 177.8 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c9fe022-fcbc-45c2-93a9-6839f305acc0")
 	)
 	(wire
 		(pts
@@ -15162,6 +15390,16 @@
 			(type default)
 		)
 		(uuid "97688d0c-d779-481e-ba14-11f06f5c93a4")
+	)
+	(wire
+		(pts
+			(xy 191.77 30.48) (xy 200.66 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9930903b-8fd6-4ab6-84ee-332d7a5c327b")
 	)
 	(wire
 		(pts
@@ -15415,6 +15653,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 30.48) (xy 200.66 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb3bd65e-75c4-4bc4-8932-f742aaf49b46")
+	)
+	(wire
+		(pts
 			(xy 265.43 111.76) (xy 271.78 111.76)
 		)
 		(stroke
@@ -15555,6 +15803,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 25.4) (xy 134.62 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9927fc3-c8e8-4d99-b902-8d34b42d384d")
+	)
+	(wire
+		(pts
 			(xy 173.99 97.79) (xy 176.53 97.79)
 		)
 		(stroke
@@ -15585,6 +15843,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 25.4) (xy 200.66 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e998bccb-c9f9-4694-83df-02217c82158d")
+	)
+	(wire
+		(pts
 			(xy 222.25 35.56) (xy 226.06 35.56)
 		)
 		(stroke
@@ -15595,6 +15863,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 25.4) (xy 157.48 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef201233-5f09-4e0e-ac6a-c3bf1c88b89e")
+	)
+	(wire
+		(pts
 			(xy 251.46 87.63) (xy 251.46 85.09)
 		)
 		(stroke
@@ -15602,6 +15880,16 @@
 			(type default)
 		)
 		(uuid "efdcf713-4b34-40e6-a482-a945539068b1")
+	)
+	(wire
+		(pts
+			(xy 177.8 25.4) (xy 181.61 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0ed3af3-5420-48ac-a22b-50b25860f95f")
 	)
 	(wire
 		(pts
@@ -19680,6 +19968,26 @@
 	)
 	(global_label "V_SUPPLY"
 		(shape input)
+		(at 173.99 25.4 180)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right)
+		)
+		(uuid "26fe6c49-4252-4ea6-97eb-ca70f3612019")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 173.99 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V_SUPPLY"
+		(shape input)
 		(at 163.83 140.97 0)
 		(effects
 			(font
@@ -19690,6 +19998,26 @@
 		(uuid "7924676f-835e-4cb3-bca1-493ebf2c6e3a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 163.83 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V_SUPPLY"
+		(shape input)
+		(at 130.81 25.4 180)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right)
+		)
+		(uuid "96ccecc7-8703-475b-bb38-f1590a747a80")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 130.81 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22749,6 +23077,279 @@
 		)
 	)
 	(symbol
+		(lib_name "C-RESCUE-BLDC_4_31")
+		(lib_id "BLDC_4-rescue:C-RESCUE-BLDC_4")
+		(at 186.69 25.4 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "02e2ed04-af17-4bad-b674-a0fe0b817ff4")
+		(property "Reference" "C24"
+			(at 180.34 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u,50V"
+			(at 189.23 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 186.69 25.4 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 25.4 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 186.69 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c1c28011-fd96-4ae5-a1f2-756bad29cd3f")
+		)
+		(pin "2"
+			(uuid "da20ad19-b9dc-4fff-bc88-5bb26bc7e69b")
+		)
+		(instances
+			(project "Ricardo-Garnet"
+				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-0000504f83be"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "C-RESCUE-BLDC_4_31")
+		(lib_id "BLDC_4-rescue:C-RESCUE-BLDC_4")
+		(at 143.51 25.4 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "067e652b-5ea5-4c3e-98bb-c49427166bba")
+		(property "Reference" "C33"
+			(at 137.16 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u,50V"
+			(at 146.05 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 143.51 25.4 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 25.4 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 143.51 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5e7b1389-25c0-4e34-866d-15544d554c23")
+		)
+		(pin "2"
+			(uuid "5450b16e-f576-4591-8999-c112257a4905")
+		)
+		(instances
+			(project "Ricardo-Garnet"
+				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-0000504f83be"
+					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "C-RESCUE-BLDC_4_30")
+		(lib_id "BLDC_4-rescue:C-RESCUE-BLDC_4")
+		(at 186.69 30.48 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1957a9cd-478f-442d-8851-28f41147ce00")
+		(property "Reference" "C25"
+			(at 180.34 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u,50V"
+			(at 189.23 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 186.69 30.48 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 30.48 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 186.69 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0644491b-7188-493d-a55a-6c1fc776e6f9")
+		)
+		(pin "2"
+			(uuid "4bb2336d-772d-427d-af01-f34a1fc60dfe")
+		)
+		(instances
+			(project "Ricardo-Garnet"
+				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-0000504f83be"
+					(reference "C25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND-RESCUE-BLDC_4_17")
+		(lib_id "BLDC_4-rescue:GND-RESCUE-BLDC_4")
+		(at 157.48 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1a0bbe3c-dd4a-468d-b039-dab580b8f0b3")
+		(property "Reference" "#PWR057"
+			(at 157.48 38.1 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 157.48 39.878 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 38.1 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 38.1 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "44b42f49-299c-4cc1-87c5-31225dd8c646")
+		)
+		(instances
+			(project "Ricardo-Garnet"
+				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-0000504f83be"
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "GND-RESCUE-BLDC_4_26")
 		(lib_id "BLDC_4-rescue:GND-RESCUE-BLDC_4")
 		(at 95.25 88.9 0)
@@ -22809,6 +23410,279 @@
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-0000504f83be"
 					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND-RESCUE-BLDC_4_17")
+		(lib_id "BLDC_4-rescue:GND-RESCUE-BLDC_4")
+		(at 200.66 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a6ade961-6b9f-4061-a29b-1f44fcbe41fd")
+		(property "Reference" "#PWR053"
+			(at 200.66 38.1 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 39.878 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 38.1 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 38.1 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3594997e-a40b-4b37-a902-8ccb01a9101d")
+		)
+		(instances
+			(project "Ricardo-Garnet"
+				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-0000504f83be"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "C-RESCUE-BLDC_4_30")
+		(lib_id "BLDC_4-rescue:C-RESCUE-BLDC_4")
+		(at 143.51 30.48 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ca5f4869-4611-43db-b275-240a2bc998e7")
+		(property "Reference" "C34"
+			(at 137.16 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u,50V"
+			(at 146.05 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 143.51 30.48 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 30.48 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 143.51 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1752bf2f-fba5-4210-9f33-b0a7be998b2a")
+		)
+		(pin "2"
+			(uuid "0ec7ed49-5fc8-494f-941c-a727791fa53f")
+		)
+		(instances
+			(project "Ricardo-Garnet"
+				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-0000504f83be"
+					(reference "C34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "C-RESCUE-BLDC_4_32")
+		(lib_id "BLDC_4-rescue:C-RESCUE-BLDC_4")
+		(at 143.51 35.56 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f4995777-3b99-43a0-a6d2-4d980cba7e28")
+		(property "Reference" "C36"
+			(at 137.16 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "15u, 100v"
+			(at 146.05 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric"
+			(at 143.51 35.56 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 35.56 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 143.51 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bf981730-de32-4782-9daa-10c8442d8a35")
+		)
+		(pin "2"
+			(uuid "02352baf-b0b8-4d9d-94c7-cf7468f953f4")
+		)
+		(instances
+			(project "Ricardo-Garnet"
+				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-0000504f83be"
+					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "C-RESCUE-BLDC_4_32")
+		(lib_id "BLDC_4-rescue:C-RESCUE-BLDC_4")
+		(at 186.69 35.56 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "feb501fb-fb28-4ce4-bd0c-c1732febe2c2")
+		(property "Reference" "C27"
+			(at 180.34 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "15u, 100v"
+			(at 189.23 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric"
+			(at 186.69 35.56 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 35.56 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 186.69 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d9f24a10-44dc-4b30-abbb-af6a68f5996d")
+		)
+		(pin "2"
+			(uuid "9bc549fb-fc1c-4753-a9a7-3b8761bc78ff")
+		)
+		(instances
+			(project "Ricardo-Garnet"
+				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-0000504f83be"
+					(reference "C27")
 					(unit 1)
 				)
 			)
