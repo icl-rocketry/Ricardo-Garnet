@@ -1,4 +1,4 @@
-27140291801860851
+27143840010393693
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106687,6 +106687,13 @@ IND_SRP6540-390M
 2
 2
 iclr
+IRFS41157PPBF
+D2Pak - 7 Pin Package Outline
+MOSFET (N-Channel)
+0
+7
+7
+iclr
 JAE_ST1W008S4TR2000
 
 
@@ -107288,6 +107295,13 @@ WE-XHMI_7070
 0
 2
 2
+iclr
+WSLP27261L300FEA
+WSLP27261L300FEA-2
+Resistor
+0
+4
+4
 iclr
 Write_Pad
 

@@ -4430,7 +4430,7 @@
 				)
 			)
 		)
-		(property "Footprint" "1053141206"
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105314-xx06_2x03_P2.50mm_Horizontal"
 			(at 228.6 243.51 0)
 			(effects
 				(font
