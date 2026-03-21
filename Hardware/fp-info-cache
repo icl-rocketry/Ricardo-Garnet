@@ -1,4 +1,4 @@
-27134975748623183
+27140291801860851
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106400,6 +106400,13 @@ iclr
 4
 4
 iclr
+1053141206
+105314-1206-1
+Connector
+0
+6
+6
+iclr
 9775026360R
 
 
@@ -106491,12 +106498,26 @@ ST1W008S4TR2000
 13
 13
 iclr
+CONN_1723102000_02_MOL
+
+1723103102 
+0
+4
+4
+iclr
 CONV_MAX77827AEFD+T
 
 
 0
 12
 12
+iclr
+CPD
+
+
+0
+2
+2
 iclr
 Chad
 

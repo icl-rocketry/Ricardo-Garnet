@@ -1,0 +1,98 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "d532769e-15cf-4f53-86ea-c4d8f83c693c")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 63.5 61.722)
+		(size 22.86 14.478)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ec316f72-3a24-4ce5-bbd0-5e59e632c3db")
+		(property "Sheetname" "Simple_Half_Bridge"
+			(at 63.5 61.0104 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Simple_Half_Bridge.kicad_sch"
+			(at 63.5 76.7846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Simulation"
+				(path "/d532769e-15cf-4f53-86ea-c4d8f83c693c"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 120.142 62.738)
+		(size 20.828 13.462)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f219ec43-9f8a-450b-abdd-e1f4dc0dcbc5")
+		(property "Sheetname" "Half_Bridge"
+			(at 120.142 62.0264 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Half_Bridge.kicad_sch"
+			(at 120.142 76.7846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Simulation"
+				(path "/d532769e-15cf-4f53-86ea-c4d8f83c693c"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
