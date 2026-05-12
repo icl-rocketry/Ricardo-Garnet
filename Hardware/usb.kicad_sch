@@ -2149,7 +2149,7 @@
 			(uuid "7b836b8f-e2f7-4a02-aaea-5f5f23bb6c5e")
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
 					(reference "J2")
 					(unit 1)
@@ -2215,7 +2215,7 @@
 			(uuid "7d1b7618-f8de-4b3d-aa8b-046586bd73a9")
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
 					(reference "TP1")
 					(unit 1)
@@ -2281,7 +2281,7 @@
 			(uuid "0822c170-c52f-4a24-9f2e-dc0082caf2a3")
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
 					(reference "TP2")
 					(unit 1)
@@ -2348,7 +2348,7 @@
 			(uuid "cfddbd95-bad4-4676-b489-0166e48bd76e")
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
 					(reference "LED6")
 					(unit 1)
@@ -2413,7 +2413,7 @@
 			(uuid "235e7120-5d87-4491-974a-4e959867a827")
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
 					(reference "#PWR027")
 					(unit 1)
@@ -2478,7 +2478,7 @@
 			(uuid "b98ef8c9-eb1f-416e-a839-1cee3c958f03")
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
 					(reference "#PWR029")
 					(unit 1)
@@ -2545,7 +2545,7 @@
 			(uuid "c85fd829-784d-4db4-b9ea-69e9f37334f5")
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
 					(reference "R40")
 					(unit 1)
@@ -2612,7 +2612,7 @@
 			(uuid "2ddef0b6-0ffd-4fef-8aa2-af0f523f688b")
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
 					(reference "R39")
 					(unit 1)
@@ -2679,7 +2679,7 @@
 			(uuid "cf0c7fac-25d1-47a1-87cd-10cff0b44974")
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
 					(reference "#PWR028")
 					(unit 1)
@@ -2746,7 +2746,7 @@
 			(uuid "5998d9b7-5718-42f8-b2ec-b2e39fbbecc4")
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
 					(reference "#PWR026")
 					(unit 1)
@@ -2822,7 +2822,7 @@
 			(uuid "2b0cfb8a-951c-47e6-80bd-45d29dc0f12c")
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
 					(reference "D6")
 					(unit 1)
@@ -2887,7 +2887,7 @@
 			(uuid "31933add-e05e-4f78-9ec9-097119539c8e")
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
 					(reference "#PWR025")
 					(unit 1)
@@ -2954,7 +2954,7 @@
 			(uuid "fa642106-bf91-4d6e-ac4b-01f7128c47b2")
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
 					(reference "R31")
 					(unit 1)
@@ -3021,7 +3021,7 @@
 			(uuid "cf310820-ea57-40b6-9dd7-49e9663b137f")
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
 					(reference "#PWR082")
 					(unit 1)
@@ -3088,7 +3088,7 @@
 			(uuid "dfb1bc0d-b757-4506-b6e2-147b10b4092d")
 		)
 		(instances
-			(project "BLDC_4"
+			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
 					(reference "#PWR081")
 					(unit 1)
