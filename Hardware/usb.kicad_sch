@@ -125,113 +125,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:USB_C_Receptacle_USB2.0"
 			(pin_names
 				(offset 1.016)
@@ -1705,26 +1598,6 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 105.41) (xy 161.29 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0bc25069-5cbf-42b0-b6a2-9a5b34afe1a6")
-	)
-	(wire
-		(pts
-			(xy 76.2 76.2) (xy 83.82 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13f231c7-e5f0-4178-bd48-903735af38b7")
-	)
-	(wire
-		(pts
 			(xy 149.86 76.2) (xy 152.4 76.2)
 		)
 		(stroke
@@ -1782,6 +1655,16 @@
 			(type default)
 		)
 		(uuid "4aeca1c0-30a9-403e-8fab-4d049a68f4e9")
+	)
+	(wire
+		(pts
+			(xy 76.2 76.2) (xy 83.82 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6580ef21-c86c-4e83-8ff3-a4ebd4809c15")
 	)
 	(wire
 		(pts
@@ -1915,6 +1798,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 105.41) (xy 166.37 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da44dfc0-ffbe-4e48-bdb3-610c30dc1caa")
+	)
+	(wire
+		(pts
 			(xy 147.32 83.82) (xy 147.32 85.09)
 		)
 		(stroke
@@ -1974,7 +1867,17 @@
 		(uuid "017cd653-9619-47ee-989a-2f5e4f473c40")
 	)
 	(label "Data-"
-		(at 76.2 76.2 0)
+		(at 161.29 111.76 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "198a3b22-9eb4-477a-8cf2-a90f42d4b18c")
+	)
+	(label "Data-"
+		(at 83.82 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1984,14 +1887,14 @@
 		(uuid "39c58fc1-f518-4fed-98b5-9d711395c912")
 	)
 	(label "Data+"
-		(at 166.37 111.76 90)
+		(at 163.83 111.76 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "8e2c105e-dac7-492f-9516-039140200bff")
+		(uuid "9266e781-48db-440a-b0d3-d3a72078221d")
 	)
 	(label "Data-"
 		(at 148.59 80.01 0)
@@ -2003,18 +1906,8 @@
 		)
 		(uuid "a5ecd3aa-b0e0-44b4-a8fa-413002cc8173")
 	)
-	(label "Data-"
-		(at 163.83 111.76 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bd0cc56c-e2b9-4032-8dda-2043b72125fe")
-	)
 	(label "Data+"
-		(at 76.2 81.28 0)
+		(at 83.82 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2054,7 +1947,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061988c49")
-		(property "Reference" "J2"
+		(property "Reference" "J801"
 			(at 134.7978 59.2582 0)
 			(effects
 				(font
@@ -2151,139 +2044,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 83.82 76.2 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-000061ab7cb8")
-		(property "Reference" "TP1"
-			(at 88.5952 75.0316 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 88.5952 77.343 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 83.82 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 83.82 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 83.82 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7d1b7618-f8de-4b3d-aa8b-046586bd73a9")
-		)
-		(instances
-			(project "Ricardo-Garnet"
-				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
-					(reference "TP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 83.82 81.28 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-000061ab87f3")
-		(property "Reference" "TP2"
-			(at 88.5952 80.1116 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 88.5952 82.423 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 83.82 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 83.82 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 83.82 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0822c170-c52f-4a24-9f2e-dc0082caf2a3")
-		)
-		(instances
-			(project "Ricardo-Garnet"
-				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
-					(reference "TP2")
+					(reference "J801")
 					(unit 1)
 				)
 			)
@@ -2298,7 +2059,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061b104ea")
-		(property "Reference" "LED6"
+		(property "Reference" "LED801"
 			(at 194.31 64.643 0)
 			(effects
 				(font
@@ -2350,7 +2111,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
-					(reference "LED6")
+					(reference "LED801")
 					(unit 1)
 				)
 			)
@@ -2359,15 +2120,15 @@
 	(symbol
 		(lib_name "+5V_9")
 		(lib_id "BLDC_4-rescue:+5V")
-		(at 161.29 105.41 0)
+		(at 166.37 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "0a362fa2-ab0c-4859-9b83-40c4b1491b5c")
-		(property "Reference" "#PWR027"
-			(at 161.29 103.124 0)
+		(property "Reference" "#PWR0805"
+			(at 166.37 103.124 0)
 			(effects
 				(font
 					(size 0.508 0.508)
@@ -2376,7 +2137,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 161.036 101.346 0)
+			(at 166.116 101.346 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -2384,7 +2145,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 161.29 105.41 0)
+			(at 166.37 105.41 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -2393,7 +2154,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 161.29 105.41 0)
+			(at 166.37 105.41 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -2402,7 +2163,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 161.29 105.41 0)
+			(at 166.37 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2415,7 +2176,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
-					(reference "#PWR027")
+					(reference "#PWR0805")
 					(unit 1)
 				)
 			)
@@ -2431,7 +2192,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "25b97929-5d43-48c6-a0ed-b028db336fe4")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR0802"
 			(at 148.59 59.944 0)
 			(effects
 				(font
@@ -2480,7 +2241,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
-					(reference "#PWR029")
+					(reference "#PWR0802")
 					(unit 1)
 				)
 			)
@@ -2495,7 +2256,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "36a188aa-e963-4c33-83e2-05d10ac28ffc")
-		(property "Reference" "R40"
+		(property "Reference" "R803"
 			(at 186.69 72.4916 90)
 			(effects
 				(font
@@ -2503,7 +2264,7 @@
 				)
 			)
 		)
-		(property "Value" "5.1k"
+		(property "Value" "5.1kΩ"
 			(at 186.69 74.803 90)
 			(effects
 				(font
@@ -2547,7 +2308,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
-					(reference "R40")
+					(reference "R803")
 					(unit 1)
 				)
 			)
@@ -2562,7 +2323,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "431693c6-948d-440d-b8df-458315753b35")
-		(property "Reference" "R39"
+		(property "Reference" "R802"
 			(at 161.29 77.47 90)
 			(effects
 				(font
@@ -2570,7 +2331,7 @@
 				)
 			)
 		)
-		(property "Value" "5.1k"
+		(property "Value" "5.1kΩ"
 			(at 161.29 79.7814 90)
 			(effects
 				(font
@@ -2614,7 +2375,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
-					(reference "R39")
+					(reference "R802")
 					(unit 1)
 				)
 			)
@@ -2631,7 +2392,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "71c98f42-2ba6-413c-935c-39d5b226bea6")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR0804"
 			(at 163.83 121.92 0)
 			(effects
 				(font
@@ -2681,7 +2442,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
-					(reference "#PWR028")
+					(reference "#PWR0804")
 					(unit 1)
 				)
 			)
@@ -2698,7 +2459,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a48723c4-746f-4039-a25e-fab50a79acf9")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR0801"
 			(at 128.27 107.95 0)
 			(effects
 				(font
@@ -2748,7 +2509,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
-					(reference "#PWR026")
+					(reference "#PWR0801")
 					(unit 1)
 				)
 			)
@@ -2763,7 +2524,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b174c9f9-002f-440e-aad7-06e39ebbfd70")
-		(property "Reference" "D6"
+		(property "Reference" "D801"
 			(at 169.037 115.6716 0)
 			(effects
 				(font
@@ -2824,7 +2585,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
-					(reference "D6")
+					(reference "D801")
 					(unit 1)
 				)
 			)
@@ -2840,7 +2601,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b30e3d8c-dd75-420e-9e14-fc5c1c9767ec")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR0806"
 			(at 181.61 66.294 0)
 			(effects
 				(font
@@ -2889,7 +2650,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
-					(reference "#PWR025")
+					(reference "#PWR0806")
 					(unit 1)
 				)
 			)
@@ -2904,7 +2665,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d65ff37c-f1e8-46c1-8c8d-c6047173bae2")
-		(property "Reference" "R31"
+		(property "Reference" "R801"
 			(at 154.94 66.1416 90)
 			(effects
 				(font
@@ -2912,7 +2673,7 @@
 				)
 			)
 		)
-		(property "Value" "5.1k"
+		(property "Value" "5.1kΩ"
 			(at 154.94 68.453 90)
 			(effects
 				(font
@@ -2956,7 +2717,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
-					(reference "R31")
+					(reference "R801")
 					(unit 1)
 				)
 			)
@@ -2973,7 +2734,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d949f582-3a39-489c-9c80-c707d9d67d51")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR0807"
 			(at 198.12 73.66 0)
 			(effects
 				(font
@@ -3023,7 +2784,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
-					(reference "#PWR082")
+					(reference "#PWR0807")
 					(unit 1)
 				)
 			)
@@ -3040,7 +2801,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e38a8c0b-8921-49a5-b150-e95dc03c17bd")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR0803"
 			(at 160.02 74.93 0)
 			(effects
 				(font
@@ -3090,7 +2851,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/f9ccebb4-6625-4e40-986f-989e05b5058f"
-					(reference "#PWR081")
+					(reference "#PWR0803")
 					(unit 1)
 				)
 			)

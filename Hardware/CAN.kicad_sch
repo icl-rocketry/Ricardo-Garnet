@@ -2480,10 +2480,14 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "VCC_5"
+		(symbol "power:+3V3"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2497,8 +2501,8 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "VCC"
-				(at 0 3.81 0)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2509,19 +2513,21 @@
 				(at 0 0 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -2530,7 +2536,7 @@
 					(hide yes)
 				)
 			)
-			(property "Field5" ""
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2539,13 +2545,14 @@
 					(hide yes)
 				)
 			)
-			(symbol "VCC_5_0_1"
-				(circle
-					(center 0 1.905)
-					(radius 0.635)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
 					(stroke
 						(width 0)
-						(type solid)
+						(type default)
 					)
 					(fill
 						(type none)
@@ -2553,23 +2560,34 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 1.27)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
-						(type solid)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
 			)
-			(symbol "VCC_5_1_1"
+			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(hide yes)
-					(name "VCC"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2735,7 +2753,7 @@
 		(at 134.62 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ff8e7db8-1a1d-4160-8e8b-3e274f0ac6ab")
+		(uuid "fd93a8d4-4ece-4588-b1db-3f0974e3dfa9")
 	)
 	(wire
 		(pts
@@ -2756,6 +2774,16 @@
 			(type default)
 		)
 		(uuid "0e1c057c-7293-4f41-b744-f78b7310cf52")
+	)
+	(wire
+		(pts
+			(xy 134.62 74.93) (xy 134.62 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24db0842-865e-46cc-981c-a4054f58e8de")
 	)
 	(wire
 		(pts
@@ -2809,16 +2837,6 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 76.2) (xy 137.16 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64801365-dc52-43bd-bd41-bb0ca5f1a3de")
-	)
-	(wire
-		(pts
 			(xy 196.85 87.63) (xy 200.66 87.63)
 		)
 		(stroke
@@ -2836,6 +2854,16 @@
 			(type default)
 		)
 		(uuid "7825c3ce-a141-4839-89f9-0cf675a1ce9a")
+	)
+	(wire
+		(pts
+			(xy 134.62 76.2) (xy 137.16 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "793ede92-ae51-4497-967d-983ddfabdbd0")
 	)
 	(wire
 		(pts
@@ -2876,6 +2904,16 @@
 			(type default)
 		)
 		(uuid "926b59a2-8b1e-4379-9828-3e5d419aafea")
+	)
+	(wire
+		(pts
+			(xy 179.07 96.52) (xy 177.8 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92af8b8c-e1fe-46c3-81d3-8e737e48c7ef")
 	)
 	(wire
 		(pts
@@ -2969,7 +3007,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 96.52) (xy 185.42 96.52)
+			(xy 187.96 96.52) (xy 186.69 96.52)
 		)
 		(stroke
 			(width 0)
@@ -3064,6 +3102,72 @@
 		(uuid "f809868e-cb2e-46e1-8358-dd74f75e0307")
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 134.62 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "068b9bb1-8af9-43a4-a19e-54940b7768c8")
+		(property "Reference" "#PWR0201"
+			(at 134.62 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 134.62 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 134.62 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 134.62 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca978ab3-8940-42b3-9759-373fd40cf8d8")
+		)
+		(instances
+			(project "Ricardo-Garnet"
+				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-000053ffb6e1"
+					(reference "#PWR0201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:SM712_SOT23")
 		(at 196.85 96.52 270)
 		(unit 1)
@@ -3073,8 +3177,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20ec3d25-4d61-46d2-ab8d-a3c947d2dc89")
-		(property "Reference" "D7"
-			(at 200.66 95.25 90)
+		(property "Reference" "D201"
+			(at 199.39 95.2499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3082,8 +3186,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SM712_SOT23"
-			(at 200.66 97.79 90)
+		(property "Value" "SM712"
+			(at 199.39 97.7899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3130,7 +3234,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-000053ffb6e1"
-					(reference "D7")
+					(reference "D201")
 					(unit 1)
 				)
 			)
@@ -3146,7 +3250,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "28729e84-641a-4f66-afa1-7de3e6b3b756")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR0203"
 			(at 144.78 106.68 0)
 			(effects
 				(font
@@ -3194,7 +3298,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-000053ffb6e1"
-					(reference "#PWR086")
+					(reference "#PWR0203")
 					(unit 1)
 				)
 			)
@@ -3208,10 +3312,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "67c5b535-8871-465b-a9b8-ab1d3321c934")
-		(property "Reference" "R44"
-			(at 172.72 90.17 0)
+		(property "Reference" "R202"
+			(at 174.752 83.058 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3219,8 +3322,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "60"
-			(at 172.72 92.71 0)
+		(property "Value" "60Ω"
+			(at 174.752 85.598 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3264,72 +3367,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-000053ffb6e1"
-					(reference "R44")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "VCC_5")
-		(lib_id "BLDC_4-rescue:VCC")
-		(at 134.62 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6fba1621-3704-495e-86aa-54086b733035")
-		(property "Reference" "#PWR084"
-			(at 134.62 73.66 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 134.62 73.66 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 134.62 76.2 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 134.62 76.2 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 134.62 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "05bc3e90-bdbc-4bb4-9dbb-f7d15e2e9320")
-		)
-		(instances
-			(project "Ricardo-Garnet"
-				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-000053ffb6e1"
-					(reference "#PWR084")
+					(reference "R202")
 					(unit 1)
 				)
 			)
@@ -3345,7 +3383,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "79297e9f-64d0-4fec-8d2d-15c1c60e4116")
-		(property "Reference" "U6"
+		(property "Reference" "U201"
 			(at 152.4 82.7786 0)
 			(effects
 				(font
@@ -3415,7 +3453,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-000053ffb6e1"
-					(reference "U6")
+					(reference "U201")
 					(unit 1)
 				)
 			)
@@ -3431,7 +3469,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f0fe96f-c6bb-4342-8b10-2e993355787e")
-		(property "Reference" "C61"
+		(property "Reference" "C201"
 			(at 124.46 77.47 0)
 			(effects
 				(font
@@ -3485,7 +3523,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-000053ffb6e1"
-					(reference "C61")
+					(reference "C201")
 					(unit 1)
 				)
 			)
@@ -3501,7 +3539,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a2a8fe9-c819-4854-8a64-a36ce61ddd8a")
-		(property "Reference" "JP4"
+		(property "Reference" "JP201"
 			(at 167.64 90.17 0)
 			(effects
 				(font
@@ -3553,7 +3591,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-000053ffb6e1"
-					(reference "JP4")
+					(reference "JP201")
 					(unit 1)
 				)
 			)
@@ -3569,7 +3607,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4012f6e-358d-468b-994b-15cdd415a5ea")
-		(property "Reference" "C62"
+		(property "Reference" "C202"
 			(at 139.7 77.4762 0)
 			(effects
 				(font
@@ -3587,7 +3625,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 137.16 78.74 0)
 			(effects
 				(font
@@ -3623,7 +3661,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-000053ffb6e1"
-					(reference "C62")
+					(reference "C202")
 					(unit 1)
 				)
 			)
@@ -3639,7 +3677,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a78137d7-ac58-4b40-9138-3d3626e287c8")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR0202"
 			(at 134.62 82.55 0)
 			(effects
 				(font
@@ -3687,7 +3725,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-000053ffb6e1"
-					(reference "#PWR085")
+					(reference "#PWR0202")
 					(unit 1)
 				)
 			)
@@ -3695,7 +3733,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 181.61 96.52 90)
+		(at 182.88 96.52 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3703,8 +3741,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "abee129a-42db-4ff4-b480-086da0c9120e")
-		(property "Reference" "C63"
-			(at 181.61 90.17 90)
+		(property "Reference" "C203"
+			(at 182.88 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3712,7 +3750,7 @@
 			)
 		)
 		(property "Value" "47nF"
-			(at 181.61 92.71 90)
+			(at 182.88 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3720,7 +3758,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 185.42 95.5548 0)
+			(at 186.69 95.5548 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3729,7 +3767,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 181.61 96.52 0)
+			(at 182.88 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3738,7 +3776,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 181.61 96.52 0)
+			(at 182.88 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3755,7 +3793,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-000053ffb6e1"
-					(reference "C63")
+					(reference "C203")
 					(unit 1)
 				)
 			)
@@ -3771,7 +3809,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b16d1c2b-42a7-490a-87bd-3f7b7478211e")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR0204"
 			(at 187.96 102.87 0)
 			(effects
 				(font
@@ -3821,7 +3859,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-000053ffb6e1"
-					(reference "#PWR087")
+					(reference "#PWR0204")
 					(unit 1)
 				)
 			)
@@ -3836,7 +3874,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b65fa2f1-e235-4ac1-9b48-cbb04470044f")
-		(property "Reference" "R41"
+		(property "Reference" "R201"
 			(at 128.27 101.6 0)
 			(effects
 				(font
@@ -3845,7 +3883,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "0Ω"
 			(at 128.27 104.14 0)
 			(effects
 				(font
@@ -3890,7 +3928,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-000053ffb6e1"
-					(reference "R41")
+					(reference "R201")
 					(unit 1)
 				)
 			)
@@ -3904,10 +3942,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "be57a0a4-1a50-4dd8-9747-2d666d12e093")
-		(property "Reference" "R45"
-			(at 172.72 100.33 0)
+		(property "Reference" "R203"
+			(at 175.26 107.442 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3915,8 +3952,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "60"
-			(at 172.72 102.87 0)
+		(property "Value" "60Ω"
+			(at 175.26 109.982 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3960,7 +3997,7 @@
 		(instances
 			(project "Ricardo-Garnet"
 				(path "/a4c716a5-e5f4-4cd7-812e-2c21e63f692f/00000000-0000-0000-0000-000053ffb6e1"
-					(reference "R45")
+					(reference "R203")
 					(unit 1)
 				)
 			)
