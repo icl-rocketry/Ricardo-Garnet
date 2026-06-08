@@ -5384,7 +5384,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "IRF7749"
+		(property "Value" "IRFS7530"
 			(at 106.68 73.66 90)
 			(effects
 				(font
