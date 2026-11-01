@@ -5,7 +5,7 @@
 #include "Config/pinmap_config.h"
 
 BLDCPhaseTest::BLDCPhaseTest() :
-    _drv(PinMap::EnGate, PinMap::Fault, PinMap::DcCal,
+    _drv(PinMap::EnGate, PinMap::Fault, PinMap::OcTw, PinMap::DcCal,
          PinMap::H1, PinMap::L1,
          PinMap::H2, PinMap::L2,
          PinMap::H3, PinMap::L3),

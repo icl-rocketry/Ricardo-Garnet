@@ -1,0 +1,24 @@
+Weight: 102.8g (including the cables)
+Motor Size: 37.1 x(29 + 16.8mm)
+Shaft Diameter: 4.0mm
+Motor Mount: 1919mm (M34)
+Configuration: 12N14P
+Motor Cable: 18#AWG, 220mm
+KV Value: 900KV
+Recommendation: 9 - 10 inch prop application
+
+
+Features
+52H Level Magnet
+Precision Balanced Rotor Test
+14P12N High Torque Motor Design
+CNC 6061 - T6 Aluminum Bell
+High RPM Imported (NSK/NMB) Bearing
+High Temperature Resistant Copper Wire Winding
+3112KV 900KV Motor Specifications
+
+Max Pull: 4050g
+Volts: 24V (6S)
+Suggested ESC: 50A - 65A
+Maximum Power: 1530W
+Suggested Prop: HQ9050 - 3R inch prop

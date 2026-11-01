@@ -1,6 +1,7 @@
 #include "OpenLoopSpin.h"
 
 #include <Arduino.h>
+#include <cmath>
 
 #include "Config/pinmap_config.h"
 
@@ -20,12 +21,10 @@ namespace
         {Phase::C, Phase::A, Phase::B},
         {Phase::C, Phase::B, Phase::A},
     };
-
-    float ramp(float a, float b, float t) { return a + (b - a) * t; }
 }
 
 OpenLoopSpin::OpenLoopSpin() :
-    _drv(PinMap::EnGate, PinMap::Fault, PinMap::DcCal,
+    _drv(PinMap::EnGate, PinMap::Fault, PinMap::OcTw, PinMap::DcCal,
          PinMap::H1, PinMap::L1,
          PinMap::H2, PinMap::L2,
          PinMap::H3, PinMap::L3),
@@ -36,6 +35,7 @@ OpenLoopSpin::OpenLoopSpin() :
 void OpenLoopSpin::setup()
 {
     _sense.setup();
+    analogSetPinAttenuation(PinMap::MosTemp, ADC_11db);
     _drv.setup();
 
     const esp_timer_create_args_t args = {
@@ -53,10 +53,26 @@ void OpenLoopSpin::setup()
 
 void OpenLoopSpin::update()
 {
+    // only the main loop touches the ADC; the timer task uses the cached value
+    const float vsup = _sense.readSupply();
+    _vsup = vsup;
+
+    const Mode running = _mode.load();
+    if ((running == Mode::Align || running == Mode::Ramp || running == Mode::Run) && vsup < MinSupply_V)
+    {
+        shutdown("supply below MinSupply_V, current limit hit?");
+    }
+
     if (millis() - _lastPrintTime >= PrintTime_ms)
     {
         _lastPrintTime = millis();
-        printStatus();
+        const float tempC = printStatus();
+
+        const Mode mode = _mode.load();
+        if (tempC >= OverTemp_C && mode != Mode::Stopped && mode != Mode::Waiting)
+        {
+            shutdown("MOSFET over temperature");
+        }
     }
 
     if (_mode.load() == Mode::Waiting && millis() - _bootTime >= StartDelay_ms)
@@ -70,16 +86,27 @@ void OpenLoopSpin::start()
     _drv.enable();
     if (_drv.isFault())
     {
+        _faultCause = _drv.faultName();
+        _faultMode = Mode::Waiting;
         shutdown("FAULT active after enable");
         return;
     }
 
+    _vsup = _sense.readSupply();
+    _vsupRef = _vsup.load();
+    if (_vsup.load() < MinSupply_V)
+    {
+        shutdown("supply below MinSupply_V at start");
+        return;
+    }
+
+    const float duty = dutyFor(AlignVoltage_V);
     _step = 0;
     _freq = 0.0f;
-    _duty = AlignDuty;
+    _duty = duty;
     _modeStart = millis();
     _mode = Mode::Align;
-    applyStep(_step, AlignDuty);
+    applyStep(_step, duty);
     Serial.println("Open-loop spin: ALIGN");
     arm(AlignTime_ms * 1000);
 }
@@ -93,7 +120,12 @@ void OpenLoopSpin::onTimer()
 {
     if (_drv.isFault())
     {
+        // decode before shutdown: EN_GATE low may clear the fault pins
         _faulted = true;
+        _faultCause = _drv.faultName();
+        _faultMode = _mode.load();
+        _faultFreq = _freq.load();
+        _faultDuty = _duty.load();
         shutdown("FAULT, gate driver disabled");
         return;
     }
@@ -109,14 +141,13 @@ void OpenLoopSpin::onTimer()
         t = 0;
     }
 
-    float freq, duty;
+    float freq;
     if (mode == Mode::Ramp)
     {
-        const float frac = t >= RampTime_ms ? 1.0f : static_cast<float>(t) / RampTime_ms;
-        freq = ramp(StartFreq_Hz, RunFreq_Hz, frac);
-        duty = ramp(StartDuty, RunDuty, frac);
-        if (frac >= 1.0f)
+        freq = StartFreq_Hz + RampRate_HzPerS * (t / 1000.0f);
+        if (freq >= RunFreq_Hz)
         {
+            freq = RunFreq_Hz;
             _mode = Mode::Run;
             _modeStart = millis();
         }
@@ -129,12 +160,13 @@ void OpenLoopSpin::onTimer()
             return;
         }
         freq = RunFreq_Hz;
-        duty = RunDuty;
     }
     else
     {
         return; // Waiting / Stopped, nothing to do
     }
+
+    const float duty = dutyFor(boostFor(freq) + BemfPerHz_V * freq);
 
     _step = Reverse ? (_step + 5) % 6 : (_step + 1) % 6;
     applyStep(_step, duty);
@@ -154,6 +186,22 @@ void OpenLoopSpin::applyStep(uint8_t step, float duty)
     _drv.setPhasePwm(s.high, duty);
 }
 
+float OpenLoopSpin::boostFor(float freq)
+{
+    if (freq >= BoostTaperFreq_Hz) return BoostRun_V;
+    float t = (freq - StartFreq_Hz) / (BoostTaperFreq_Hz - StartFreq_Hz);
+    if (t < 0.0f) t = 0.0f;
+    return BoostStart_V + (BoostRun_V - BoostStart_V) * t;
+}
+
+float OpenLoopSpin::dutyFor(float volts) const
+{
+    const float vsup = _vsupRef.load();
+    if (vsup < 1.0f) return 0.0f;   // no valid supply reading, don't drive
+    const float duty = volts / vsup;
+    return duty > MaxDuty ? MaxDuty : duty;
+}
+
 void OpenLoopSpin::arm(uint32_t us)
 {
     esp_timer_start_once(_timer, us);
@@ -167,19 +215,42 @@ void OpenLoopSpin::shutdown(const char* reason)
     _duty = 0.0f;
     _mode = Mode::Stopped;
     Serial.printf("Open-loop spin: STOP (%s)\n", reason);
+    if (_faultCause)
+    {
+        Serial.printf("  cause: %s  (in %s, f=%.1fHz, duty=%.1f%%)\n",
+                      _faultCause, modeName(_faultMode), _faultFreq, _faultDuty * 100.0f);
+    }
 }
 
-void OpenLoopSpin::printStatus()
+float OpenLoopSpin::printStatus()
 {
     const Mode mode = _mode.load();
-    Serial.printf("[%-5s] f=%5.1fHz duty=%4.1f%%  A(io%d)=%5.2fV B(io%d)=%5.2fV C(io%d)=%5.2fV  Vsup(io%d)=%5.2fV%s\n",
+    const float tempC = readMosTempC();
+    Serial.printf("[%-5s] f=%5.1fHz (%4.0frpm) duty=%4.1f%% (%4.2fV)  A(io%d)=%5.2fV B(io%d)=%5.2fV C(io%d)=%5.2fV  Vsup(io%d)=%5.2fV  Tmos(io%d)=%5.1fC%s\n",
                   modeName(mode),
-                  _freq.load(), _duty.load() * 100.0f,
+                  _freq.load(), _freq.load() * 60.0f / PolePairs,
+                  _duty.load() * 100.0f, _duty.load() * _vsup.load(), // actual, sags with supply
                   PinMap::Sens3, _sense.readPhase(DRV8302::Phase::A),
                   PinMap::Sens2, _sense.readPhase(DRV8302::Phase::B),
                   PinMap::Sens1, _sense.readPhase(DRV8302::Phase::C),
-                  PinMap::AnIn, _sense.readSupply(),
+                  PinMap::AnIn, _vsup.load(),
+                  PinMap::MosTemp, tempC,
                   (_faulted.load() || _drv.isFault()) ? "  FAULT" : "");
+    return tempC;
+}
+
+float OpenLoopSpin::readMosTempC()
+{
+    // NTC on the high side of the divider: V = Vref * Rb / (Rntc + Rb)
+    float mv = static_cast<float>(analogReadMilliVolts(PinMap::MosTemp));
+    if (mv < 1.0f) mv = 1.0f;                          // open NTC -> very cold
+    if (mv > NtcVref_mV - 1.0f) mv = NtcVref_mV - 1.0f; // shorted NTC -> very hot
+    const float rNtc = NtcRBottom * (NtcVref_mV / mv - 1.0f);
+
+    // beta equation
+    constexpr float T25_K = 298.15f;
+    const float invT = 1.0f / T25_K + std::log(rNtc / NtcR25) / NtcBeta;
+    return 1.0f / invT - 273.15f;
 }
 
 const char* OpenLoopSpin::modeName(Mode m)

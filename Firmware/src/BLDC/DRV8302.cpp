@@ -2,12 +2,13 @@
 
 #include <Arduino.h>
 
-DRV8302::DRV8302(int enGate, int fault, int dcCal,
+DRV8302::DRV8302(int enGate, int fault, int ocTw, int dcCal,
                  int inhA, int inlA,
                  int inhB, int inlB,
                  int inhC, int inlC) :
     _enGate(enGate),
     _fault(fault),
+    _ocTw(ocTw),
     _dcCal(dcCal),
     _inh{inhA, inhB, inhC},
     _inl{inlA, inlB, inlC}
@@ -36,6 +37,7 @@ void DRV8302::setup()
     pinMode(_dcCal, OUTPUT);
 
     pinMode(_fault, INPUT_PULLUP);
+    pinMode(_ocTw, INPUT_PULLUP);
 
     _enabled = false;
 }
@@ -100,4 +102,19 @@ void DRV8302::allOff()
 bool DRV8302::isFault() const
 {
     return digitalRead(_fault) == LOW;
+}
+
+bool DRV8302::isOcTw() const
+{
+    return digitalRead(_ocTw) == LOW;
+}
+
+const char* DRV8302::faultName() const
+{
+    const bool fault = isFault();
+    const bool octw = isOcTw();
+    if (fault && octw) return "OVERCURRENT (VDS trip) or OVERTEMP shutdown";
+    if (fault)         return "PVDD/GVDD UNDERVOLTAGE or GVDD overvoltage";
+    if (octw)          return "overtemp warning";
+    return "none";
 }
